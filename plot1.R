@@ -8,8 +8,8 @@ skip=grep("1/2/2007", readLines("household_power_consumption.txt")),
 col.names = colnames(read.table("household_power_consumption.txt", nrow = 1, 
                                 sep = ";", header = TRUE)))
 
-## to save the plot to a PNG file with a width of 480 pixels and a height of 480 pixels, is necesary
-## to construct the device first.
+## save the plot to a PNG file with a width of 480 pixels and a height of 480 pixels, is necesary
+## construct the device first.
 
 png("plot1.png", width = 480, height = 480)
 
